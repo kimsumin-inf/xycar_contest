@@ -1,0 +1,17 @@
+<launch>
+
+  <node pkg="usb_cam" type="usb_cam_node" name="usb_cam" output="screen" >
+    <param name="video_device" value="/dev/videoCAM" />
+    <param name="autoexposure" value="false" />
+    <param name="exposure" value="50" />
+    <param name="auto_white_balance" value="false" />
+    <param name="white_balance" value="7000" />
+    <param name="image_width" value="1280" />
+    <param name="image_height" value="720" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="io_method" value="mmap" />
+    <param name="camera_name" value="usb_cam" />
+    <param name="camera_frame_id" value="usb_cam" />
+  </node>
+
+</launch>
